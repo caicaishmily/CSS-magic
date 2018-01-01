@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>平行四边形</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<style>
+			.parallelogram {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 200px;
+				height: 120px;
+			}
+			.parallelogram:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: #0ab;
+				z-index: -1;
+				transform: skew(.08turn);
+			}
+			.parallelogram:hover:before {
+				transform: skew(0);
+				transition: all .5s linear;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="parallelogram"></div>
+		</div>
+	</body>
+	
+</html>
