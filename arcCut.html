@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>弧形切角</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<style type="text/css">
+			.arc {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 80px;
+				padding: 80px;
+			}
+			.arc {
+				background: 
+					radial-gradient(circle at top left, transparent 15px, yellowgreen 0) top left,
+					radial-gradient(circle at top right, transparent 15px, yellowgreen 0) top right,
+					radial-gradient(circle at bottom right, transparent 15px, yellowgreen 0) bottom right,
+					radial-gradient(circle at bottom left, transparent 15px, yellowgreen 0) bottom left;
+				background-size: 50% 50%;
+				background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="arc">
+			</div>
+		</div>
+	</body>
+</html>
