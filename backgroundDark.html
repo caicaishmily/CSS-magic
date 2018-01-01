@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>背景变暗效果</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<style>
+			.background {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 220px;
+				height: 160px;
+				border-radius: 10px;
+				overflow: hidden;
+				background: #e91e63;
+				cursor: pointer;
+				transition: transform .2s;
+			}
+			.background:hover {
+				box-shadow: 0 0 0 1920px rgba(0,0,0,.7);
+				transform: translate(-50%,-50%) scale(1,2);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="background"></div>
+		</div>
+	</body>
+</html>
