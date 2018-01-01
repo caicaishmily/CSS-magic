@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>条纹</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<style>
+			.stripe {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				width: 200px;
+				height: 200px;
+				background: deeppink;
+				border-radius: .5em;
+				background: repeating-linear-gradient(45deg,#c99,#c99 15px,#ccc 0,#ccc 30px);
+			}
+			.wave-stripe {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				width: 200px;
+				height: 200px;
+				border-radius: .5em;
+				background: 
+				  linear-gradient(135deg,deeppink 25%,transparent 25%) -50px 0,
+				  linear-gradient(225deg,deeppink 25%,transparent 25%) -50px 0,
+				  linear-gradient(315deg,deeppink 25%,transparent 25%),
+				  linear-gradient(45deg,deeppink 25%,transparent 25%);
+				background-size: 40px 40px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="stripe"></div>
+			<div class="wave-stripe"></div>
+		</div>
+	</body>
+</html>
