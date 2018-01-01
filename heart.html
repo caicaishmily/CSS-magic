@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>heart</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <style>
+    	.heart {
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%,-50%) rotate(45deg);
+    		background: red;
+    		width: 100px;
+    		height: 100px;
+    	}
+    	.heart:before, .heart:after {
+    		content: '';
+    		position: absolute;
+    		top: 0;
+    		left: -50px;
+    		width: 100px;
+    		height: 100px;
+    		border-radius: 50%;
+    		background: red;
+    	}
+    	.heart:after {
+    		top: -50px;
+    		left: 0;
+    	}
+    </style>
+</head>
+<body>
+    <div class="container">
+			<div class="heart">
+				
+			</div>
+    </div>
+</body>
+</html>
