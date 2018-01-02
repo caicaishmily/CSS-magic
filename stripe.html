@@ -30,7 +30,35 @@
 				  linear-gradient(315deg,deeppink 25%,transparent 25%),
 				  linear-gradient(45deg,deeppink 25%,transparent 25%);
 				background-size: 40px 40px;
-				
+			}
+			.arrow-stripe {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 200px;
+				height: 200px;
+				border-radius: .5em;
+				background: 
+					linear-gradient(45deg,#92baac 45px,transparent 45px) 64px 64px,
+					linear-gradient(45deg,#92baac 45px,transparent 45px,transparent 91px,#e1ebbd 91px,#e1ebbd 135px,transparent 135px),
+					linear-gradient(-45deg,#92baac 23px,transparent 23px,transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px, #92baac 158px);
+				background-color: #e1ebbd;
+				background-size: 128px 128px;	
+			}
+			.colorful-stripe {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				width: 300px;
+				height: 200px;
+				text-align: center;
+				color: #fff;
+				font-size: 200%;
+				border-radius: .5em;
+				background: linear-gradient(limegreen,transparent),linear-gradient(90deg,skyblue,transparent),linear-gradient(-90deg,coral,transparent);
+				background-blend-mode: screen;
 			}
 		</style>
 	</head>
@@ -38,6 +66,8 @@
 		<div class="container">
 			<div class="stripe"></div>
 			<div class="wave-stripe"></div>
+			<div class="arrow-stripe"></div>
+			<div class="colorful-stripe"></div>
 		</div>
 	</body>
 </html>
