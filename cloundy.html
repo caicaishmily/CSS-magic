@@ -1,1 +1,71 @@
-test
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>多云</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<style>
+			.cloundy {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 200px;
+				height: 260px;
+				transform: translate(-50%,-50%);
+				background: #2eb5e5;
+				border-radius: 5px;
+			}
+			.cloundy:before {
+				content: "";
+				text-indent: 23px;
+				font-size: 22px;
+				line-height: 40px;
+				color: #333;
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				background: #fff;
+				left: 30%;
+				top: 45%;
+				transform: translate(-50%,-50%);
+				border-radius: 50%;
+				box-shadow: 
+				 #fff 65px -15px 0 -5px,
+				 #fff 25px -25px,
+				 #fff 30px 10px,
+				 #fff 60px 15px 0 -10px,
+				 #fff 85px 5px 0 -5px,
+				 #c8c8c8 35px -35px,
+				 #c8c8c8 66px -27px 0 -5px,
+				 #c8c8c8 91px -10px 0 -8px;
+				 animation: cloudy 5s ease-in-out infinite; 				
+			}
+			.cloundy:after {
+				content: "";
+				position: absolute;
+				top: 80%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				height: 15px;
+				width: 120px;
+				background: rgba(0,0,0,.5);
+				border-radius: 50%;
+				animation: cloudy_shadow 5s ease-in-out infinite;
+			}
+			@keyframes cloudy {
+				50% {transform: translate(-50%,-70%);}
+				100% {transform: translate(-50%,-50%);}
+			}
+			@keyframes cloudy_shadow {
+				50% {transform: translate(-50%,-50%) scale(.8);background: rgba(0,0,0,.2);}
+				100% {transform: translate(-50%,-50%) scale(1);background: rgba(0,0,0,.5);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="cloundy"></div>
+		</div>
+	</body>
+</html>
+
