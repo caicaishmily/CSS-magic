@@ -1,1 +1,60 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>five-star</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <style>
+    	.five-star {
+    		position: absolute;
+    		top: 35%;
+    		left: 50%;
+    		transform: translate(-50%,-50%) scale(8);
+    		width: 0;
+    		height: 0;
+    		display: block;
+    		border-left: 3.04px solid transparent;
+    		border-right: 3.24px solid transparent;
+    		border-bottom: 10px solid #98dbe3;
+    		-webkit-filter: drop-shadow(1px .5px 1px #ccc);
+    		cursor: pointer;
+    	}
+    	
+    	.five-star:before {
+    		content: '';
+    		position: absolute;
+    		top: 8.65px;
+    		left: -8.82px;
+    		width: 0;
+    		height: 0;
+    		color: #98DBE3;
+    		display: block;
+    		border-left: 12.5px solid transparent;
+    		border-right: 12.5px solid transparent;
+    		border-bottom: 9.08px solid #98dbe3;
+    		transform-origin: top center;
+    		transform: rotate(36deg);
+    	}
+    	.five-star:after {
+    		content: '';
+    		position: absolute;
+    		top: 8.65px;
+    		left: -15px;
+    		width: 0;
+    		height: 0;
+    		color: #98DBE3;
+    		display: block;
+    		border-left: 12.5px solid transparent;
+    		border-right: 12.5px solid transparent;
+    		border-bottom: 9.08px solid #98dbe3;
+    		transform-origin: top center;
+    		transform: rotate(-36deg);	
+    	}
+    </style>
+</head>
+<body>
+    <div class="container">
+			<div class="five-star"></div>
+    </div>
+</body>
+</html>
