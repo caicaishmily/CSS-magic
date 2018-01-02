@@ -60,11 +60,63 @@
 				50% {transform: translate(-50%,-50%) scale(.8);background: rgba(0,0,0,.2);}
 				100% {transform: translate(-50%,-50%) scale(1);background: rgba(0,0,0,.5);}
 			}
+			.cloundy2 {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 200px;
+				height: 260px;
+				transform: translate(-50%,-50%);
+				background: #2eb5e5;
+				border-radius: 5px;
+			}
+			.cloundy2:before {
+				content: "";
+				text-indent: 23px;
+				font-size: 22px;
+				line-height: 40px;
+				color: #333;
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				background: #fff;
+				left: 30%;
+				top: 55%;
+				transform: translate(-50%,-50%);
+				border-radius: 50%;
+				z-index: 100;
+				box-shadow: 
+				 #fff 65px -15px 0 -5px,
+				 #fff 25px -25px,
+				 #fff 30px 10px,
+				 #fff 60px 15px 0 -10px,
+				 #fff 85px 5px 0 -5px;
+				 animation: cloudy2 5s ease-in-out infinite; 				
+			}
+			.cloundy2:after {
+				content: "";
+				position: absolute;
+				top: 45%;
+				left: 63%;
+				transform: translate(-50%,-50%);
+				height: 60px;
+				width: 60px;
+				z-index: 10;
+				background: linear-gradient(180deg,#fe9f38 0%, #f46635 100%);
+				border-radius: 50%;
+				box-shadow: 0 0 10px 4px #ffa563;
+				animation: cloudy2 10s ease-in-out infinite;
+			}
+			@keyframes cloudy2 {
+				50% {transform: translate(-50%,-70%);}
+				100% {transform: translate(-50%,-50%);}
+			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
 			<div class="cloundy"></div>
+			<div class="cloundy2"></div>
 		</div>
 	</body>
 </html>
